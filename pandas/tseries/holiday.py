@@ -469,8 +469,7 @@ USColumbusDay = Holiday('Columbus Day', month=10, day=1,
                         offset=DateOffset(weekday=MO(2)))
 USThanksgivingDay = Holiday('Thanksgiving', month=11, day=1,
                             offset=DateOffset(weekday=TH(4)))
-USMartinLutherKingJr = Holiday('Dr. Martin Luther King Jr.',
-                               start_date=datetime(1986, 1, 1), month=1, day=1,
+USMartinLutherKingJr = Holiday('Dr. Martin Luther King Jr.', start_date=datetime(1986,1,1), month=1, day=1,
                                offset=DateOffset(weekday=MO(3)))
 USPresidentsDay = Holiday('President''s Day', month=2, day=1,
                           offset=DateOffset(weekday=MO(3)))

@@ -1041,9 +1041,6 @@ Performance Improvements
 
 Bug Fixes
 ~~~~~~~~~
-
-- Bug in incorrection computation of ``.mean()`` on ``timedelta64[ns]`` because of overflow (:issue:`9442`)
-- Bug in  ``.isin`` on older numpies (:issue: `11232`)
 - Bug in ``DataFrame.to_html(index=False)`` renders unnecessary ``name`` row (:issue:`10344`)
 - Bug in ``DataFrame.to_latex()`` the ``column_format`` argument could not be passed (:issue:`9402`)
 - Bug in ``DatetimeIndex`` when localizing with ``NaT`` (:issue:`10477`)
@@ -1069,10 +1066,7 @@ Bug Fixes
 - Bug in ``offsets.generate_range`` where ``start`` and ``end`` have finer precision than ``offset`` (:issue:`9907`)
 - Bug in ``pd.rolling_*`` where ``Series.name`` would be lost in the output (:issue:`10565`)
 - Bug in ``stack`` when index or columns are not unique. (:issue:`10417`)
-- Bug in setting a ``Panel`` when an axis has a multi-index (:issue:`10360`)
 - Bug in ``USFederalHolidayCalendar`` where ``USMemorialDay`` and ``USMartinLutherKingJr`` were incorrect (:issue:`10278` and :issue:`9760` )
-- Bug in ``.sample()`` where returned object, if set, gives unnecessary ``SettingWithCopyWarning`` (:issue:`10738`)
-- Bug in ``.sample()`` where weights passed as ``Series`` were not aligned along axis before being treated positionally, potentially causing problems if weight indices were not aligned with sampled object. (:issue:`10738`)
 
 - Regression fixed in (:issue:`9311`, :issue:`6620`, :issue:`9345`), where groupby with a datetime-like converting to float with certain aggregators (:issue:`10979`)
 
